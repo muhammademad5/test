@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="bookDetails">
+        <h2 id="bookTitle"></h2>
+        <p id="bookAuthor"></p>
+        <p id="bookDescription"></p>
+        <p id="bookDuration"></p>
+        <button onclick="playAudio()">Play</button>
+        <div class="interactions">
+            <button id="likeButton" onclick="likeBook()">Like</button>
+            <button id="dislikeButton" onclick="dislikeBook()">Dislike</button>
+        </div>
+        <h3>Comments</h3>
+        <div id="commentsSection">
+            <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <div id="commentsList"></div>
+        </div>
+        <h3>Related Books</h3>
+        <div id="relatedBooks" class="audiobooks-container"></div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>
